@@ -1,0 +1,55 @@
+2021-03-15 17:59:52.037  INFO 35130 --- [main] c.w.a.undeterred.UndeterredApplication   : Starting UndeterredApplication using Java 15.0.2 on pop-os with PID 35130 (/home/watson/Development/VSCodeWorkspaces/SpringProjects/walrus-assignment/undeterred/target/classes started by watson in /home/watson/Development/VSCodeWorkspaces/SpringProjects/walrus-assignment)
+2021-03-15 17:59:52.059  INFO 35130 --- [main] c.w.a.undeterred.UndeterredApplication   : No active profile set, falling back to default profiles: default
+2021-03-15 17:59:55.806  INFO 35130 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-15 17:59:55.898  INFO 35130 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 0 Reactive MongoDB repository interfaces.
+2021-03-15 17:59:58.401  INFO 35130 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2021-03-15 17:59:58.464  INFO 35130 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-15 17:59:58.465  INFO 35130 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-15 17:59:58.800  INFO 35130 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-15 17:59:58.802  INFO 35130 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6203 ms
+2021-03-15 17:59:59.454  INFO 35130 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2021-03-15 17:59:59.483  INFO 35130 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2021-03-15 17:59:59.508  INFO 35130 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2021-03-15 17:59:59.784  INFO 35130 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2021-03-15 18:00:02.063  INFO 35130 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-15 18:00:02.384  INFO 35130 --- [cluster-rtt-ClusterId{value='604f534af392d535466908e6', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+2021-03-15 18:00:02.395  INFO 35130 --- [cluster-ClusterId{value='604f534af392d535466908e6', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:8}] to localhost:27017
+2021-03-15 18:00:02.399  INFO 35130 --- [cluster-ClusterId{value='604f534af392d535466908e6', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=69456260}
+2021-03-15 18:00:03.454  INFO 35130 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2021-03-15 18:00:03.461  INFO 35130 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2021-03-15 18:00:03.470  INFO 35130 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@37c5284a]]
+2021-03-15 18:00:03.475  INFO 35130 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2021-03-15 18:00:03.570  INFO 35130 --- [main] c.w.a.undeterred.UndeterredApplication   : Started UndeterredApplication in 13.621 seconds (JVM running for 15.26)
+2021-03-15 18:00:49.240  INFO 35130 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-15 18:00:49.242  INFO 35130 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-15 18:00:49.248  INFO 35130 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-03-15 18:00:49.329  INFO 35130 --- [http-nio-8888-exec-1] c.w.a.u.services.LoggingServiceImpl      : REQUEST method=[GET] path=[/getresource] headers=[{sec-fetch-mode=cors, referer=http://localhost:8080/, sec-fetch-site=same-site, accept-language=en-GB,en-US;q=0.9,en;q=0.8, origin=http://localhost:8080, dnt=1, accept=*/*, sec-ch-ua="Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99", sec-ch-ua-mobile=?0, host=localhost:8888, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36, sec-fetch-dest=empty}] 
+2021-03-15 18:00:49.433 DEBUG 35130 --- [http-nio-8888-exec-1] o.s.web.client.RestTemplate              : HTTP GET http://localhost:5000/available
+2021-03-15 18:00:49.448 DEBUG 35130 --- [http-nio-8888-exec-1] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2021-03-15 18:00:49.459 DEBUG 35130 --- [http-nio-8888-exec-1] c.w.a.u.i.RestTemplateInterceptor        : [RestTemplateInterceptor] Request body: 
+2021-03-15 18:00:50.048 DEBUG 35130 --- [http-nio-8888-exec-1] c.w.a.u.i.RestTemplateInterceptor        : [RestTemplateInterceptor] Response body: Server is Down
+2021-03-15 18:00:50.049 DEBUG 35130 --- [http-nio-8888-exec-1] o.s.web.client.RestTemplate              : Response 504 GATEWAY_TIMEOUT
+2021-03-15 18:00:50.258 DEBUG 35130 --- [http-nio-8888-exec-1] o.s.web.client.RestTemplate              : HTTP GET http://localhost:5000/available
+2021-03-15 18:00:50.259 DEBUG 35130 --- [http-nio-8888-exec-1] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2021-03-15 18:00:50.261 DEBUG 35130 --- [http-nio-8888-exec-1] c.w.a.u.i.RestTemplateInterceptor        : [RestTemplateInterceptor] Request body: 
+2021-03-15 18:00:50.284 DEBUG 35130 --- [http-nio-8888-exec-1] c.w.a.u.i.RestTemplateInterceptor        : [RestTemplateInterceptor] Response body: Server is Down
+2021-03-15 18:00:50.284 DEBUG 35130 --- [http-nio-8888-exec-1] o.s.web.client.RestTemplate              : Response 504 GATEWAY_TIMEOUT
+2021-03-15 18:00:50.697 DEBUG 35130 --- [http-nio-8888-exec-1] o.s.web.client.RestTemplate              : HTTP GET http://localhost:5000/available
+2021-03-15 18:00:50.699 DEBUG 35130 --- [http-nio-8888-exec-1] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2021-03-15 18:00:50.700 DEBUG 35130 --- [http-nio-8888-exec-1] c.w.a.u.i.RestTemplateInterceptor        : [RestTemplateInterceptor] Request body: 
+2021-03-15 18:00:50.713 DEBUG 35130 --- [http-nio-8888-exec-1] c.w.a.u.i.RestTemplateInterceptor        : [RestTemplateInterceptor] Response body: Server is Down
+2021-03-15 18:00:50.714 DEBUG 35130 --- [http-nio-8888-exec-1] o.s.web.client.RestTemplate              : Response 504 GATEWAY_TIMEOUT
+2021-03-15 18:00:51.516 DEBUG 35130 --- [http-nio-8888-exec-1] o.s.web.client.RestTemplate              : HTTP GET http://localhost:5000/available
+2021-03-15 18:00:51.517 DEBUG 35130 --- [http-nio-8888-exec-1] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2021-03-15 18:00:51.518 DEBUG 35130 --- [http-nio-8888-exec-1] c.w.a.u.i.RestTemplateInterceptor        : [RestTemplateInterceptor] Request body: 
+2021-03-15 18:00:51.532 DEBUG 35130 --- [http-nio-8888-exec-1] c.w.a.u.i.RestTemplateInterceptor        : [RestTemplateInterceptor] Response body: Hello World
+2021-03-15 18:00:51.533 DEBUG 35130 --- [http-nio-8888-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
+2021-03-15 18:00:51.535 DEBUG 35130 --- [http-nio-8888-exec-1] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "text/plain;charset=UTF-8"
+2021-03-15 18:01:00.058  INFO 35130 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 6], outboundChannel[pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 5], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 2, completed tasks = 3]
+2021-03-15 18:10:38.408  INFO 35130 --- [SpringContextShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2021-03-15 18:10:38.414  INFO 35130 --- [SpringContextShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@37c5284a]]
+2021-03-15 18:10:38.417  INFO 35130 --- [SpringContextShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2021-03-15 18:10:38.527  INFO 35130 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2021-03-15 18:10:38.529  INFO 35130 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'brokerChannelExecutor'
+2021-03-15 18:10:38.537  INFO 35130 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2021-03-15 18:10:38.539  INFO 35130 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
