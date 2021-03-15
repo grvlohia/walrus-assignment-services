@@ -11,7 +11,7 @@
 	<groupId>com.walrus.assignment</groupId>
 	<artifactId>undeterred</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>undeterred</name>
 	<description>Implementation of Service Undeterred task</description>
 	<properties>
